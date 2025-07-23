@@ -28,7 +28,7 @@ app.use("/api/products", (req, res) => {
   })
 });
 
-app.use("/production", (req, res) => {
+app.use("/api/admin", (req, res) => {
   return res.status(200).json({
     messsage: "How are you doing? This is a production route"
   })
