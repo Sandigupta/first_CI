@@ -28,6 +28,12 @@ app.use("/api/products", (req, res) => {
   })
 });
 
+app.use("/production", (req, res) => {
+  return res.status(200).json({
+    messsage: "How are you doing? This is a production route"
+  })
+});
+
 app.use(errorHandler);
 
 const server = app.listen(port, () =>
